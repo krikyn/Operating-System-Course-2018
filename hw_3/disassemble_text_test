@@ -1,0 +1,30 @@
+0000000000000000 <main>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	48 83 ec 20          	sub    rsp,0x20
+   8:	ba 05 00 00 00       	mov    edx,0x5
+   d:	be 00 00 00 00       	mov    esi,0x0
+  12:	bf 0a 00 00 00       	mov    edi,0xa
+  17:	e8 00 00 00 00       	call   1c <main+0x1c>
+  1c:	48 89 45 e8          	mov    QWORD PTR [rbp-0x18],rax
+  20:	b9 06 00 00 00       	mov    ecx,0x6
+  25:	ba 00 00 00 00       	mov    edx,0x0
+  2a:	be 04 00 00 00       	mov    esi,0x4
+  2f:	bf 0a 00 00 00       	mov    edi,0xa
+  34:	e8 00 00 00 00       	call   39 <main+0x39>
+  39:	48 89 45 f0          	mov    QWORD PTR [rbp-0x10],rax
+  3d:	b9 07 00 00 00       	mov    ecx,0x7
+  42:	ba 00 00 00 00       	mov    edx,0x0
+  47:	be 04 00 00 00       	mov    esi,0x4
+  4c:	bf 0f 00 00 00       	mov    edi,0xf
+  51:	e8 00 00 00 00       	call   56 <main+0x56>
+  56:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+  5a:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  5e:	48 89 c7             	mov    rdi,rax
+  61:	e8 00 00 00 00       	call   66 <main+0x66>
+  66:	bf 00 00 00 00       	mov    edi,0x0
+  6b:	b8 00 00 00 00       	mov    eax,0x0
+  70:	e8 00 00 00 00       	call   75 <main+0x75>
+  75:	b8 00 00 00 00       	mov    eax,0x0
+  7a:	c9                   	leave  
+  7b:	c3                   	ret  

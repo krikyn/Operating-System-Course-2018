@@ -1,0 +1,7 @@
+0x55,                    //      push   rbp
+0x48, 0x89, 0xe5,        //      mov    rbp,rsp
+0x89, 0x7d, 0xfc,        //      mov    DWORD PTR [rbp-0x4],edi
+0x8b, 0x45, 0xfc,        //      mov    eax,DWORD PTR [rbp-0x4]
+0x0f, 0xaf, 0x45, 0xfc,  //      imul   eax,DWORD PTR [rbp-0x4]
+0x5d,                    //      pop    rbp
+0xc3,                    //      ret  
