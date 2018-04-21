@@ -101,17 +101,17 @@ void *connection_handler(void *socket_desc)
 
            //Вывод результата поиска на консоль
            if ( istr1 == NULL){
-              strcpy((char *)response, "400 Bad Request\0"); 
+              strcpy((char *)response, "HTTP/1.0 400 Bad Request\0"); 
               isOk = 0;
            } else {
                 istr2 = strstr (str,"HTTP/1.0");
                 if (istr2 == NULL){
-                    strcpy((char *)response, "505 HTTP Version Not Supported\0"); 
+                    strcpy((char *)response, "HTTP/1.0 505 HTTP Version Not Supported\0"); 
                     isOk = 0;
                 } else {
                     istr3 = strstr(str,"Host:");
                     if (istr3 == NULL){
-                        strcpy((char *)response, "400 Bad Request\0"); 
+                        strcpy((char *)response, "HTTP/1.0 400 Bad Request\0"); 
                         isOk = 0;
                     } else {
                         strncpy(dirfile, istr3 + 6,100);
@@ -197,7 +197,7 @@ void read_local_file(char uri[100], char * body[50], int * isOk, char * response
                 break;
             } else 
             {
-                strcpy((char *)response, "520 Unknown Error \0");
+                strcpy((char *)response, "HTTP/1.0 520 Unknown Error \0");
                 isOk = 0;
                 return;
             }
