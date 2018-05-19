@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/krikyn/os_homeworks/hw_6/server_project/server.c
+sys/types.h
+-
+sys/socket.h
+-
+netdb.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+unistd.h
+-
+sys/epoll.h
+-
+errno.h
+-
+fcntl.h
+-
+

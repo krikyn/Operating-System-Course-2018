@@ -1,0 +1,3 @@
+/home/krikyn/os_homeworks/hw_6/client_project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/krikyn/os_homeworks/hw_6/client_project/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/krikyn/os_homeworks/hw_6/client_project/cmake-build-debug/CMakeFiles/client.dir
